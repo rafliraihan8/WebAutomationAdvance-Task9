@@ -6,6 +6,7 @@ Tugas :
 
 ## Requirement 
 - IDE Editor (VSCode / Intelij)
+- Chrome / Firefox
 - JDK_11
 - Maven
 
