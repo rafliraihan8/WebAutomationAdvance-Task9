@@ -18,12 +18,6 @@ public class FlightPage extends HomePage {
     @FindBy(xpath = "//div[@class='flt_fsw_inputBox searchToCity inactiveWidget ']")
     WebElement getTo;
 
-//    @FindBy(xpath = "//span[.='Departure']")
-//    WebElement setDeparture;
-//
-//    @FindBy(xpath = "//div[@class='DayPicker-Months']/div[1]//div[5]/div[.='30']")
-//    WebElement chooseDateDeparture;
-//
     @FindBy(xpath = "//span[.='Return']")
     WebElement setReturn;
 
@@ -36,8 +30,7 @@ public class FlightPage extends HomePage {
     public void search(){
         clickAndWait(getFrom);
         clickAndWait(getTo);
-//        clickAndWait(setDeparture);
-//        clickAndWait(chooseDateDeparture);
+
         clickAndWait(setReturn);
         clickAndWait(chooseReturnDate);
         clickAndWait(btnsearch);
