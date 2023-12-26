@@ -30,7 +30,6 @@ public class FlightPage extends HomePage {
     public void search(){
         clickAndWait(getFrom);
         clickAndWait(getTo);
-
         clickAndWait(setReturn);
         clickAndWait(chooseReturnDate);
         clickAndWait(btnsearch);

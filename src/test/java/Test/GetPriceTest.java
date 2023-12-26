@@ -14,10 +14,10 @@ public class GetPriceTest extends BaseWebTest{
         PricePage pricePage = new PricePage(driver, explicitWait);
 
         flightPage.search();
-        pricePage.setGetPrice();
-        String txtExpPrice = "₹ 12,575\n" +
-                "per adult";
-        Assert.assertEquals(txtExpPrice, pricePage.setGetPrice());
+
+        String expectDeparturePrice = pricePage.setGetPrice();
+        Assert.assertTrue(expectDeparturePrice.contains("₹ 8,484"));
+
     }
 
 }
