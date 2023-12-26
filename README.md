@@ -5,7 +5,8 @@ Tugas :
 3. Extract the value of top price
 
 ## Requirement 
-- IDE Editor (VSCode / Intelij
+- IDE Editor (VSCode / Intelij)
+- Chrome / Firefox
 - JDK_11
 - Maven
 
