@@ -13,16 +13,33 @@ public class FlightPage extends HomePage {
     }
 
     @FindBy(xpath = "//div[@class='flt_fsw_inputBox searchCity inactiveWidget ']")
-    WebElement btnFrom;
+    WebElement getFrom;
 
     @FindBy(xpath = "//div[@class='flt_fsw_inputBox searchToCity inactiveWidget ']")
-    WebElement btnTo;
+    WebElement getTo;
 
+//    @FindBy(xpath = "//span[.='Departure']")
+//    WebElement setDeparture;
+//
+//    @FindBy(xpath = "//div[@class='DayPicker-Months']/div[1]//div[5]/div[.='30']")
+//    WebElement chooseDateDeparture;
+//
+    @FindBy(xpath = "//span[.='Return']")
+    WebElement setReturn;
 
+    @FindBy(xpath = "//div[@class='DayPicker-Months']/div[2]//div[1]/div[.='1']")
+    WebElement chooseReturnDate;
+
+    @FindBy(xpath = "//a[.='Search']")
+    WebElement btnsearch;
 
     public void search(){
-    clickAndWait(btnFrom);
-    clickAndWait(btnTo);
-
+        clickAndWait(getFrom);
+        clickAndWait(getTo);
+//        clickAndWait(setDeparture);
+//        clickAndWait(chooseDateDeparture);
+        clickAndWait(setReturn);
+        clickAndWait(chooseReturnDate);
+        clickAndWait(btnsearch);
     }
 }

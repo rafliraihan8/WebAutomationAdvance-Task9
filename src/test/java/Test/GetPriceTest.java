@@ -1,3 +1,4 @@
+
 package Test;
 
 import Page.FlightPage;
@@ -12,7 +13,11 @@ public class GetPriceTest extends BaseWebTest{
         FlightPage flightPage = new FlightPage(driver, explicitWait);
         PricePage pricePage = new PricePage(driver, explicitWait);
 
-
+        flightPage.search();
+        pricePage.setGetPrice();
+        String txtExpPrice = "₹ 12,575\n" +
+                "per adult";
+        Assert.assertEquals(txtExpPrice, pricePage.setGetPrice());
     }
 
 }

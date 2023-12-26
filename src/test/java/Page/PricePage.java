@@ -12,5 +12,13 @@ public class PricePage extends HomePage {
         PageFactory.initElements(driver.get(), this);
     }
 
+    @FindBy(css = ".clusterContent > div:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1)")
+    WebElement getPrice;
 
+    public String setGetPrice(){
+
+        return getText(getPrice);
+
+
+    }
 }

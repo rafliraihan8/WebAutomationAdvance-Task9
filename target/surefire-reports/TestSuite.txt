@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.500 s <<< FAILURE! -- in TestSuite
-Test.GetPriceTest.getPrice -- Time elapsed: 3.266 s <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.25 s <<< FAILURE! -- in TestSuite
+Test.GetPriceTest.getPrice -- Time elapsed: 1.700 s <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="flt_fsw_inputBox searchToCity inactiveWidget ">...</div> is not clickable at point (513, 289). Other element would receive the click: <iframe title="notification-frame-~197139432" name="notification-frame-~197139432" id="webklipper-publisher-widget-container-notification-frame" frameborder="0" marginheight="0" marginwidth="0" style="display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; visibility: visible; height: 100%; width: 100%; transform: translate(1000px, 1000px);" data-notification-layout-id="~184fc0b7" data-notification-layout-name="modal"></iframe>
+element click intercepted: Element <a class="primaryBtn font24 latoBold widget...Btn ">Search</a> is not clickable at point (642, 453). Other element would receive the click: <div class="pushRight font14 lightGreyText latoBold">...</div>
   (Session info: chrome=120.0.6099.111)
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27a467b1d509f1c66516cf1c78a6e40d, clickElement {id=5A0F8DD1EC211506C598BDC146B2DF68_element_39}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.111, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50262}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50262/devtoo..., se:cdpVersion: 120.0.6099.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (27a467b1d509f1c66516cf1c78a6e40d)] -> xpath: //div[@class='flt_fsw_inputBox searchToCity inactiveWidget ']]
-Session ID: 27a467b1d509f1c66516cf1c78a6e40d
+Command: [f7b1b74a2ef68829bbc75cc573a7a454, clickElement {id=B732A74CB051132100BBAD5DB7D963C5_element_51}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.111, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53555/devtoo..., se:cdpVersion: 120.0.6099.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f7b1b74a2ef68829bbc75cc573a7a454)] -> xpath: //a[.='Search']]
+Session ID: f7b1b74a2ef68829bbc75cc573a7a454
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -33,8 +33,8 @@ Session ID: 27a467b1d509f1c66516cf1c78a6e40d
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy13.click(Unknown Source)
 	at Page.HomePage.clickAndWait(HomePage.java:19)
-	at Page.FlightPage.search(FlightPage.java:41)
-	at Test.GetPriceTest.getPrice(GetPriceTest.java:14)
+	at Page.FlightPage.search(FlightPage.java:43)
+	at Test.GetPriceTest.getPrice(GetPriceTest.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
