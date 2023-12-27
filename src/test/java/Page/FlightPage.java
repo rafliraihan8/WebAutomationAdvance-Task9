@@ -15,8 +15,14 @@ public class FlightPage extends HomePage {
     @FindBy(xpath = "//div[@class='flt_fsw_inputBox searchCity inactiveWidget ']")
     WebElement getFrom;
 
+    @FindBy(xpath = "//li[.='New Delhi, India Indira Gandhi International AirportDEL']")
+    WebElement searchFrom;
+
     @FindBy(xpath = "//div[@class='flt_fsw_inputBox searchToCity inactiveWidget ']")
     WebElement getTo;
+
+    @FindBy(xpath = "//li[.='Mumbai, India Chhatrapati Shivaji International AirportBOM']")
+    WebElement searchTo;
 
     @FindBy(xpath = "//span[.='Return']")
     WebElement setReturn;
@@ -29,7 +35,9 @@ public class FlightPage extends HomePage {
 
     public void search(){
         clickAndWait(getFrom);
+        clickAndWait(searchFrom);
         clickAndWait(getTo);
+        clickAndWait(searchTo);
         clickAndWait(setReturn);
         clickAndWait(chooseReturnDate);
         clickAndWait(btnsearch);

@@ -12,7 +12,7 @@ public class PricePage extends HomePage {
         PageFactory.initElements(driver.get(), this);
     }
 
-    @FindBy(css = ".clusterContent > div:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1)")
+    @FindBy(xpath = "//div[@class='splitVw']//div[2]/label[@class='splitViewListing checked  ']//div[@class='makeFlex priceInfo gap-x-10 ']")
     WebElement getPrice;
 
     public String setGetPrice(){

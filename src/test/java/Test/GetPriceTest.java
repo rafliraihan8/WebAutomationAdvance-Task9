@@ -15,8 +15,9 @@ public class GetPriceTest extends BaseWebTest{
 
         flightPage.search();
 
-        String expectDeparturePrice = pricePage.setGetPrice();
-        Assert.assertTrue(expectDeparturePrice.contains("₹ 8,484"));
+        String expectedPrice = pricePage.setGetPrice();
+        Assert.assertTrue(Boolean.parseBoolean(expectedPrice), "₹ 6,636 per adult");
+
 
     }
 
